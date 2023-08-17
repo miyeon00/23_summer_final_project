@@ -1,5 +1,4 @@
 <?php
-
 require 'db_connection.php';
 
  // SQL to create table for members
@@ -47,7 +46,7 @@ if (
         if ($stmt_insert->execute()) {
             //echo "Data inserted successfully\n";
 			echo '<script type="text/javascript">
-				window.location = "https://codd.cs.gsu.edu/~mpark52/WP/PW/03/login.html" // change url to your codd server
+				window.location = "login.php" // change url to your codd server
 			</script>';
         } else {
             echo "Error inserting data: " . $stmt_insert->error . "\n";
